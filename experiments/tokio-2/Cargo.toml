@@ -1,6 +1,6 @@
 [package]
 authors = ["night"]
-name = "tokio-1"
+name = "tokio-2"
 version = "0.1.0"
 
 [dependencies]
