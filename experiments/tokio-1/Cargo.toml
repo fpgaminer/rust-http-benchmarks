@@ -1,0 +1,15 @@
+[package]
+authors = ["night"]
+name = "tokio-1"
+version = "0.1.0"
+
+[dependencies]
+bytes = "0.4.8"
+futures = "0.1.22"
+net2 = "0.2"
+tokio = "0.1.7"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3

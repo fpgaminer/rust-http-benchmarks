@@ -1,0 +1,26 @@
+[package]
+name = "actix"
+version = "0.7.0"
+
+[[bin]]
+name = "actix"
+path = "src/main.rs"
+
+[dependencies]
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+rand = "0.5"
+bytes = "0.4"
+num_cpus = "1.0"
+futures = "0.1"
+http = "0.1"
+url = { version="1.7", features=["query_encoding"] }
+
+actix = "0.7"
+actix-web = { git = "https://github.com/actix/actix-web.git", default-features = false }
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1

@@ -1,0 +1,1 @@
+wrk -H 'Host: $1' -H "Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7" -H "Connection: keep-alive" --latency -d 15 -c 4096 --timeout 8 -t 2 http://$1:8080/plaintext
